@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #333;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  #top-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+    background: #444;
+  }
+  
+  button {
+    background: #555;
+    border: none;
+    padding: 5px 10px;
+    color: #eee;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #666;
+  }
+  
+  #gl1 {
+    flex: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #status {
+    margin-left: auto;
+    font-size: 14px;
+  }
+  
+  #overlay-controls {
+    background: #222;
+    padding: 10px;
+    border-top: 1px solid #444;
+  }
+  
+  #overlay-controls h3 {
+    margin-top: 0;
+  }
+  
+  .overlay-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .overlay-control label {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .overlay-control select,
+  .overlay-control input[type=range] {
+    background: #555;
+    border: none;
+    color: #eee;
+  }
+  
+  .overlay-control select:focus,
+  .overlay-control input[type=range]:focus {
+    outline: none;
+  }
+  

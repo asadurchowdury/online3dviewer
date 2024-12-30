@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Niivue Multiple Overlays Example</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="top-bar">
+  <button id="openMainBtn">Open Main Volume</button>
+  <button id="addOverlayBtn">Add Overlays</button>
+  <button id="view3D">3D Render</button>
+  <button id="viewAxial">Axial</button>
+  <button id="viewCoronal">Coronal</button>
+  <button id="viewSagittal">Sagittal</button>
+  <button id="sliceDec">Slice -</button>
+  <button id="sliceInc">Slice +</button>
+  <span id="status"></span>
+</div>
+
+<div id="overlay-controls">
+  <h3>Overlay Controls</h3>
+  <div id="overlays-container">
+    <!-- Overlay controls will be dynamically added here -->
+  </div>
+</div>
+
+<canvas id="gl1"></canvas>
+
+<script type="module">
+  import { initApp } from './src/main.js';
+  initApp();
+</script>
+</body>
+</html>
